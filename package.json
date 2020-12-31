@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "npm run build && surge  ./dist mem-navbar.surge.sh"
   },
   "dependencies": {
     "history": "^5.0.0",
