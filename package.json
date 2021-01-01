@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode production",
-    "deploy": "npm run build && surge  ./dist mem-navbar.surge.sh"
+    "deploy": "npm run build && cp CORS dist/ && surge  ./dist mem-navbar.surge.sh"
   },
   "dependencies": {
     "history": "^5.0.0",

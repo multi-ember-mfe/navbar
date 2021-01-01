@@ -1,69 +1,50 @@
-/* SASS syntax is enabled by precss plugin */
-
-$color: steelblue;
-
-#cookie-consent {
-  border: 1px solid $color;
-  border-radius: 0.5rem;
-  bottom: 1rem;
-  left: 1rem;
-  max-width: 280px;
-  padding: 1rem;
-  position: fixed;
-  transform: none;
-  transition: 350ms ease-in-out;
-
-  &.hide {
-    transform: translateY(calc(100% + 1rem));
-  }
-
-  .m-0 {
-    margin: 0;
-  }
-
-  .mb-1 {
-    margin-bottom: 1rem;
-  }
-
-  .bg-blue {
-    background: $color;
-  }
-
-  .py-1 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .px-2 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .rounded-1 {
-    border-radius: 0.5rem;
-  }
-
-  .border-none {
-    border: none;
-  }
-
-  .text-white {
-    color: #fff;
-  }
-
-  .text-base {
-    font-size: 1rem;
-  }
-
-  .flex {
-    display: flex;
-  }
-
-  .justify-end {
-    justify-content: flex-end;
-  }
-
-  .align-center {
-    align-items: center;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
 }
+
+.left-panel {
+}
+
+.right-panel {
+  padding: 1em;
+  background: var(--color-white);
+  color: var(--color-ember);
+  /*height: 100vh;*/
+}
+
+.right-panel a {
+  color: var(--color-ember);
+}
+
+table td {
+  padding: .5em;
+}
+
+table tr td:nth-child(1) {
+  font-weight: bold;
+  color: var(--color-burnt-ember);
+}
+
+table tr::odd {
+  background: var(--color-burnt-ember);
+}
+
+table tr:even {
+  background: var(--color-ember);
+}
+
+table a {
+  text-decoration: underline;
+  cursor: pointer;
+  padding:.25em;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 100%;
+}
+
